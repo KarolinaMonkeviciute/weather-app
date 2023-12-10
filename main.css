@@ -1,0 +1,105 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(129, 191, 204);
+  background: linear-gradient(
+    340deg,
+    rgba(129, 191, 204, 1) 36%,
+    rgba(202, 105, 210, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0.6rem;
+  box-shadow: 9px 12px 45px -1px rgba(0, 0, 0, 0.61);
+}
+.input-box {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.input-box label {
+  display: none;
+}
+.input-box input {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.input-box button {
+  border-radius: 0.4rem;
+  border: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.box {
+  display: none;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.additional-divs {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 2rem 0 2rem;
+}
+.info {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  width: 50%;
+}
+.error {
+  text-align: center;
+  color: rgb(143, 19, 19);
+  font-weight: bold;
+  display: none;
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  80% {
+    transform: translateX(5px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-5px);
+  }
+  40%,
+  60% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
